@@ -1,0 +1,38 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: antiquewhite;
+}
+
+.content {
+    border: solid #000000;
+  padding: 16px;
+ }
+
+
+
+ .maintitle {
+    border:solid #000000;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+ }
+
+
+.primera {
+    display: flex;
+    padding: 10px; 
+    border: solid  #000000 
+}
+
+ .imagen1 {
+padding: 4px;
+border: solid#000000;
+display: flex;
+ }
+
+.textoprcp {        
+    text-align: center;
+    align-self: center;
+ }
+
+ p{ font-weight: 501;}
