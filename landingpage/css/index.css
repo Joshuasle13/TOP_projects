@@ -33,6 +33,8 @@
 
 
 
+
+
  .main{
    background-color: #1d2937;
 }
@@ -121,6 +123,36 @@
    text-wrap: balance;
    width: 300px;
    font-size: 18px;
+}
+
+
+
+
+.pagequote{
+   background-color: #e5e7eb;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 140px;
+}
+.quote{
+   font-size: 36px;
+   font-weight: 0;
+   color: #1f2937;
+   font-style: italic;
+   text-align: left;
+   text-wrap: wrap;
+   margin: 0 195px;
+   width: 900px;
+   
+}
+.qsource{
+   font-size: 20px;
+   font-weight: bolder;
+   font-style: oblique;
+   align-self: center;
+   margin-left:  395px   ;
 }
 
 
