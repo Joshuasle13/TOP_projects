@@ -158,3 +158,62 @@
 
 
 
+.pageend{
+   display: flex;
+   justify-content: center;
+
+}
+.modal{
+   margin: 100px 130px;
+  border-radius: 8px;
+   display: flex;
+  height: fit-content;
+   background-color: #3882f6;
+   width: 1000px;
+   padding: 60px; 
+   justify-content: space-around;
+}
+.minfo{
+   display: flex;
+   flex-direction: column;
+   gap: 4px; 
+    }
+.modaltitle{
+   font-size: 23px;
+   font-weight: bolder;
+   color: #f9faf8;
+}
+.modaltext{
+   font-size: 18px;
+   font-weight: lighter;
+   color: #f9faf8;
+}
+.endBton {
+   display: flex;
+  justify-content: center;
+   align-self: flex-end;
+   background-color: #3882f6;
+   border-radius: 10px;
+   border-color: #f9faf8;
+   border-width: 3px;
+   font-size: 15px;
+   font-weight: bold;
+   color: #f9faf8;
+   padding: 8px;
+   height: fit-content;
+   width: 130px;
+}
+
+
+
+.footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #f9faf8;
+   font-size: 18px;
+   font-weight: 500;
+   background-color: #1d2937;
+   padding: 50px;
+   text-align: center;
+}
