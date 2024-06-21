@@ -80,4 +80,26 @@ Landing page
 -------------------------------------------------------------------------------------------------------------
 
 
+Well, it wasn't hard.
 
+I have to get better but for now I'm proud of what I did, at the end of the the day you never stop learning.
+
+
+first I did the boilerplate and the page structure.
+
+Added all the information and tags that I tought i was going to use, and also giving them classes.
+
+
+
+after I created a css file and then I began to add color to the painting.
+
+along the way I created some divs, and added classes here and there, and the end result was the one you se on my landing page. 
+
+
+Still much to learn.
+and I'm taking my time to learn what everything means and
+how it works.
+
+
+It's a long road.
+but I'll get there.
