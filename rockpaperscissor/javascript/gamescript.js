@@ -1,101 +1,103 @@
 
-function wholegame(){
-    let play = window.prompt('Do you want to play? Y/N');
-    let Wchoice = play.toLowerCase()
 
-    if (Wchoice === 'y'){
-        rps()
-    } else if(Wchoice === 'n'){
-        alert('Too bad')
-    }bAns()
-}
-function bAns(){
-    if(wholegame() === 'Too bad'){
-        wholegame()
+const   rock    =   document.getElementById('btn1');
+const   paper   =   document.getElementById('btn2');
+const   scissor =   document.getElementById('btn3');
+let selection   =   document.getElementById('selected')
+let computer    =   document.getElementById('computer')
+
+
+
+
+
+function getComputerChoice  (){
+    let numC =   Math.floor(Math.random()*3) +1;
+    if(numC  === 1){
+        return  'Rock'
+    }else   if(numC  === 2){
+        return  'Paper'
+    }else   if(numC  === 3){
+        return  'Scissor'
     }
-}
-
-var humanScore = 0;
-var computerScore = 0;
-function game (humanChoice, computerChoice) {
-
- 
-
-    humanChoice.toLowerCase()
-    computerChoice.toLowerCase()
- 
-           if(humanChoice === computerChoice){
-               alert (`${humanChoice} vs ${computerChoice} = Draw`);
-             }else if(humanChoice === 'rock' && computerChoice === 'scissors'){
-               alert (`${humanChoice} vs ${computerChoice} = You win, Rock beats Scissors`), humanScore++ ; 
-           }else if(humanChoice === 'rock' && computerChoice === 'paper'){
-               alert(`${humanChoice} vs ${computerChoice} = You loose, Paper beats Rock`), computerScore++;    
-    
-           }else if(humanChoice === 'paper' && computerChoice === 'rock'){
-               alert (`${humanChoice} vs ${computerChoice} = You win, Paper beats Rock`), humanScore++;
-           }else if(humanChoice === 'paper' && computerChoice === 'scissors'){
-               alert ('You loose, Scissors beats Paper'), computerScore++;
-         
-           }else if(humanChoice === 'scissor' && computerChoice === 'paper'){
-               alert (`${humanChoice} vs ${computerChoice} = You win, Scissors, beats Paper`), humanScore++;
-           }else if(humanChoice === 'scissor' && computerChoice === 'rock'){
-              alert (`${humanChoice} vs ${computerChoice} = You loose, Rock beats Scissors`), computerScore++;}
-              else if(humanChoice ==='scissor'||'scissors' && computerChoice === 'scissors'){
-                alert(`${humanChoice} vs ${computerChoice} = Draw`);
-              }
-alert(`Human ${humanScore}, Computer ${computerScore}`)
-
-if(humanScore === 5){
-    alert('you won'), humanScore = 0, computerScore = 0;
-}else if(computerScore === 5){
-    alert('you lost'), computerScore = 0, computerScore = 0;
-}else if(humanScore === 5 && computerScore === 5){
-    alert(`It's a draw`), computerScore = 0, computerScore = 0;
-}
-
-
-console.log(humanScore, computerScore)
-    } 
-function rps(){
-
-    function getComputerChoice(){
-        let num = Math.floor(Math.random()* 3) + 1;
-        if (num === 1){
-            return 'scissors'
-        }else if ( num === 2) {
-            return 'rock'
-        } else if(num === 3 ) {
-            return 'paper'
-        }
     }
-    
+     
 
-let answer = window.prompt( '¿what are you going to choose?')
+     var    humanScore  =   0;
+     var    computerScore   =   0;
 
-let choice = answer.toLowerCase();
+function evento(){
+   
+   
 
-
-function getHumanChoice(){
-    
-  if(choice === 'rock'||choice  === 'paper'|| choice === 'scissor' || 'scissors'){
-    return choice
-  }else return 'Not an option'
-}
  
-let humanChoice = getHumanChoice();
-let computerChoice = getComputerChoice();
+    rock.addEventListener('click',()=>{
+        let cchoice = getComputerChoice();
+        num =   'Rock';
+     
+        
+       
+      
+        if( num === cchoice){
+            alert ('draw')
+        }else if(num !== cchoice && cchoice=== 'Scissor'){
+            alert(`${num} vs ${cchoice}, you win`),   humanScore++;
+        }else if(num !== cchoice && cchoice=== 'Paper'){
+            alert(`${num} vs ${cchoice}, you lose`),  computerScore++ ;}
+            console.log(humanScore,computerScore);
+            if(humanScore   === 5){
+                alert('you won'),   humanScore    =   0,    computerScore  =   0;
+            }else if(computerScore  ===  5){
+                alert('you lost'),  humanScore    =   0, computerScore   =   0;
+            }
+      })
+  
+    paper.addEventListener('click',()=>{
+        let cchoice = getComputerChoice();
+        num =   'Paper';
+       
+        
+       
 
+        if( num === cchoice){
+            alert ('draw')
+        }else if(num !== cchoice && cchoice=== 'Scissor'){
+            alert(`${num} vs ${cchoice}, you lose`),  computerScore++;
+        }else if(num !== cchoice && cchoice=== 'Rock'){
+            alert(`${num} vs ${cchoice}, you win`),   humanScore++; }
+            console.log(humanScore,computerScore);
+            if(humanScore   === 5){
+                alert('you won'),   humanScore    =   0,    computerScore  =   0;
+            }else if(computerScore  ===  5){
+                alert('you lost'),  humanScore    =   0, computerScore   =   0;
+            };
+            
+        })
+  
+    scissor.addEventListener('click',()=>{
+        let cchoice = getComputerChoice();
+        num =   'Scissor';
+      
+    
 
-game(humanChoice, computerChoice) 
+        if( num === cchoice){
+            alert ('draw')
+        }else if(num !== cchoice && cchoice=== 'Rock'){
+            alert(`${num} vs ${cchoice}, you lose`),  computerScore++;
+        }else if(num !== cchoice && cchoice=== 'Paper'){
+            alert(`${num} vs ${cchoice}, you win`),   humanScore++;}
+            console.log(humanScore,computerScore);
+            if(humanScore   === 5){
+                alert('you won'),   humanScore    =   0,    computerScore  =   0;
+            }else if(computerScore  ===  5){
+                alert('you lost'),  humanScore    =   0, computerScore   =   0;
+            }
+        })
+        
+       
+      
+        
+    }
 
+    
 
-
-}
-
-
-
-wholegame()
-
-
-
-
+evento()
