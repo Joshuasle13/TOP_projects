@@ -1,0 +1,52 @@
+body{
+    height: fit-content;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#container{
+    border: solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+
+
+}
+
+
+#sketch{
+    border: solid black;
+    height: 30vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    
+}
+
+
+.column{
+    transition: 15s  ;
+}
+.row{
+    transition: 15s;
+}
+
+.column:hover{
+background-color: black;
+transition: 0.1s;
+    
+}
+
+.row:hover{
+    background-color: black;
+    transition: 0.1s;
+   
+        
+    }
